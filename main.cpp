@@ -82,8 +82,6 @@ int main()
 {
     const string stop_words_joined = ReadLine();
     const set<string> stop_words = ParseStopWords(stop_words_joined);
-
-    // Read documents
     vector<vector<string>> documents;
     const int document_count = ReadLineWithNumber();
     for (int document_id = 0; document_id < document_count; ++document_id) {
